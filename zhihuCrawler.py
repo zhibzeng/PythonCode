@@ -16,6 +16,8 @@ from bs4 import BeautifulSoup
 import os
 from People import People
 import queue
+import io
+import gzip
 
 def config_init():
     """initial configuration"""
@@ -68,19 +70,36 @@ def FetchPage(url,data):
                 headers = headers,
                 url = url,
             )
-    page = urllib.request.urlopen(req)
-    return page
+    try:
+        page = urllib.request.urlopen(req)
+    except:
+        print('fetch page error')
+    ## using gzip to fetch page
+    if page.code == 200:
+        predata = page.read().decode('utf-8')
+        pdata = io.StringIO(predata)
+        gzipper = gzip.GzipFile(fileobj = pdata)
+        try:
+            pagedata = gzipper.read()
+            print('gzip')
+        except:
+            # if the server don't support gzip download directly
+            pagedata = predata
+    else:
+        return None
+    page.close()
+    return pagedata
 
 
 
 
 if __name__ == '__main__':
     email='zengzhibin054@gmail.com'
-    psw = '**********'
+    psw = '********'
     domain = 'http://www.zhihu.com'
     config_init()  #initial configuratin
     main_page = login(email,psw) #login zhihu.com
-    main_soup = BeautifulSoup(main_page.read().decode('utf-8'))
+    main_soup = BeautifulSoup(main_page)
 
     peopleQueue = queue.Queue()
     urlQueue = queue.Queue()
@@ -108,8 +127,9 @@ if __name__ == '__main__':
             person = People(name,link)
             peopleQueue.put(person)
         count = count + 1
-        print(count)
-        if count >100:
+        if count%100==0:
+            print(count)
+        if count >5:
             break
 
 
