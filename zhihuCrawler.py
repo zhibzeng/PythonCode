@@ -76,7 +76,7 @@ def FetchPage(url,data):
 
 if __name__ == '__main__':
     email='zengzhibin054@gmail.com'
-    psw = '7165092054'
+    psw = '**********'
     domain = 'http://www.zhihu.com'
     config_init()  #initial configuratin
     main_page = login(email,psw) #login zhihu.com
