@@ -18,7 +18,9 @@ from People import People
 import queue
 import io
 import gzip
+import threading
 import time
+
 def config_init():
     """initial configuration"""
     cookie = http.cookiejar.CookieJar()
@@ -94,46 +96,86 @@ def FetchPage(url,data):
     return pagedata
 
 
+class ThreadUrl(threading.Thread):
+    """Threaded Url Grab"""
+    def __init__(self, queue,out_queue):
+        threading.Thread.__init__(self)
+        self.queue = queue
+        self.out_queue = out_queue
 
-if __name__ == '__main__':
-    start = time.time()
+    def run(self):
+        while True:
+            global count
+            global domain
+            global peopleNum # the number of people you want to fetch
+            #grabs url from queue
+            item = self.queue.get()
+            self.out_queue.put(item)
+            if count<peopleNum:
+                #grabs urls of people and then grabs chunk of webpage
+                followees_pages = FetchPage(item.getUrl()+r'/followees',None)
+                followees_soup = BeautifulSoup(followees_pages)
+                followees_links = followees_soup.find_all('div',
+                class_='zm-profile-card zm-profile-section-item zg-clear no-hovercard')
+                for followee in followees_links:
+                    link = domain+followee.a['href']
+                    name = followee.a['title']
+                    person = People(name,link)
+                    if count<peopleNum:
+                        self.queue.put(person)
+                        count = count+1
+            #signals to queue job is done
+            self.queue.task_done()
+
+
+class DatamineThread(threading.Thread):
+    """Threaded Url Grab"""
+    def __init__(self, out_queue):
+        threading.Thread.__init__(self)
+        self.out_queue = out_queue
+
+    def run(self):
+        while True:
+            #grabs item from queue
+            item = self.out_queue.get()
+            print('name->'+item.getName())
+            print('link->'+item.getUrl())
+            #signals to queue job is done
+            self.out_queue.task_done()
+
+
+def main():
+    ThreadNum = 5
     email='zengzhibin054@gmail.com'
     psw = '7165092054'
-    domain = 'http://www.zhihu.com'
     config_init()  #initial configuratin
     main_page = login(email,psw) #login zhihu.com
     main_soup = BeautifulSoup(main_page)
-
     peopleQueue = queue.Queue()
-    urlQueue = queue.Queue()
-
+    outQueue = queue.Queue()
     ## profile page
     profile_tag = main_soup.find('div',class_='top-nav-profile')
     profile_link = domain+profile_tag.a['href']
     profile_name = profile_tag.a.span.getText()
     me = People(profile_name,profile_link)
     peopleQueue.put(me)
+    for i in range(ThreadNum):
+        t = ThreadUrl(peopleQueue,outQueue)
+        t.setDaemon(True)
+        t.start()
+    for i in range(ThreadNum):
+        t = DatamineThread(outQueue)
+        t.setDaemon(True)
+        t.start()
+    outQueue.join()
+    peopleQueue.join()
 
-    count = 0
-    ## followees page
-    while peopleQueue.qsize() > 0:
-        item = peopleQueue.get()
-        print('link -> '+item.getUrl())
-        print('name -> '+item.getName())
-        followees_pages = FetchPage(item.getUrl()+r'/followees',None)
-        followees_soup = BeautifulSoup(followees_pages)
-        followees_links = followees_soup.find_all('div',
-            class_='zm-profile-card zm-profile-section-item zg-clear no-hovercard')
-        for followee in followees_links:
-            link = domain+followee.a['href']
-            name = followee.a['title']
-            person = People(name,link)
-            peopleQueue.put(person)
-        count = count + 1
-        if count%100==0:
-            print(count)
-        if count >50:
-            break
+if __name__ == '__main__':
+    start = time.time()
+    count = 1
+    domain = 'http://www.zhihu.com'
+    peopleNum = 50 # the number of people you want to fetch
+    main()
     print(str(count))
     print ("Elapsed Time: %s" % (time.time() - start))
 

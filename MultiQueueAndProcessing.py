@@ -16,8 +16,8 @@ from urllib.request import urlopen
 import time
 from bs4 import BeautifulSoup
 
-hosts = ["http://yahoo.com", "http://google.com", "http://amazon.com",
-        "http://ibm.com", "http://apple.com"]
+hosts = ["http://www.baidu.com", "http://www.sina.com", "http://www.163.com",
+        "http://www.qq.com", "http://www.ifeng.com"]
 
 host_queue = queue.Queue()
 out_queue = queue.Queue()
@@ -66,7 +66,7 @@ start = time.time()
 def main():
 
     #spawn a pool of threads, and pass them queue instance
-    for i in range(5):
+    for i in range(3):
         t = ThreadUrl(host_queue, out_queue)
         t.setDaemon(True)
         t.start()
@@ -75,7 +75,7 @@ def main():
     for host in hosts:
         host_queue.put(host)
 
-    for i in range(5):
+    for i in range(3):
         dt = DatamineThread(out_queue)
         dt.setDaemon(True)
         dt.start()
