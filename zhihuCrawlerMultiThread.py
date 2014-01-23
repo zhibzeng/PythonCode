@@ -144,8 +144,8 @@ class DatamineThread(threading.Thread):
             self.out_queue.task_done()
 
 
-def main():
-    ThreadNum = 5
+def main(thread):
+    ThreadNum = thread
     email='zengzhibin054@gmail.com'
     psw = '7165092054'
     config_init()  #initial configuratin
@@ -171,13 +171,20 @@ def main():
     peopleQueue.join()
 
 if __name__ == '__main__':
+    i=2
     start = time.time()
     count = 1
     domain = 'http://www.zhihu.com'
-    peopleNum = 50 # the number of people you want to fetch
-    main()
+    peopleNum = 20 # the number of people you want to fetch
+    main(i)
+    elapsed = time.time() - start
     print(str(count))
-    print ("Elapsed Time: %s" % (time.time() - start))
+    print ("Elapsed Time: %s" % (elapsed))
+    print('threadNum:'+str(i))
+    f = open('zhihu.txt','a')
+    s = 'count:'+str(count)+','+'Thread:'+str(i)+','+'elapsed:'+str(elapsed)
+    f.write(s+'\n')
+    f.close()
 
 
 

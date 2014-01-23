@@ -1,11 +1,11 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
+# Name:        people.py
 # Purpose:
 #
-# Author:      I304905
+# Author:      jeffrey.zzeng
 #
 # Created:     22/01/2014
-# Copyright:   (c) I304905 2014
+# Copyright:   (c) jeffrey.zzeng 2014
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 

@@ -1,0 +1,11 @@
+count:100,Thread:2,elapsed:54.98749804496765
+count:100,Thread:3,elapsed:60.20102000236511
+count:100,Thread:4,elapsed:66.09160804748535
+count:100,Thread:5,elapsed:68.61886096000671
+count:100,Thread:6,elapsed:68.3008291721344
+count:100,Thread:7,elapsed:83.39133906364441
+count:100,Thread:8,elapsed:87.82078099250793
+count:100,Thread:9,elapsed:86.03860306739807
+
+count:101,Thread:1,elapsed:702.2106330394745
+count:20,Thread:2,elapsed:29.515000104904175

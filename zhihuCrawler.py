@@ -132,10 +132,15 @@ if __name__ == '__main__':
         count = count + 1
         if count%100==0:
             print(count)
-        if count >50:
+        if count >100:
             break
-    print(str(count))
-    print ("Elapsed Time: %s" % (time.time() - start))
+    elapsed = time.time() - start
+    print ("Elapsed Time: %s" % (elapsed))
+    print('threadNum:'+str(1))
+    f = open('zhihu.txt','a')
+    s = 'count:'+str(count)+','+'Thread:'+str(1)+','+'elapsed:'+str(elapsed)
+    f.write(s+'\n')
+    f.close()
 
 
 
