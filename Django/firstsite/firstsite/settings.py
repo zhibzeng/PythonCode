@@ -38,6 +38,14 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 )
 
+from os.path import join
+TEMPLATE_DIRS = (
+    'C:/Users/i304905/Documents/GitHub/PythonCode/Django/firstsite/firstsite/template',
+)
+
+
+  
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
