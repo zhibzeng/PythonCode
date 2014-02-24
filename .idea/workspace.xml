@@ -23,69 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="KNN.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="KNN.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KNN/KNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="10" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
+            <state line="12" column="34" selection-start="321" selection-end="321" vertical-scroll-proportion="0.44974446" vertical-offset="0" max-vertical-offset="968">
               <folding>
-                <marker date="1393227606075" expanded="true" signature="28:88" placeholder="import ..." />
-                <marker date="1393227606075" expanded="true" signature="111:232" placeholder="..." />
-                <marker date="1393227606075" expanded="true" signature="246:315" placeholder="..." />
+                <element signature="e#28#47#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zhihu.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhihu.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zhihuCrawler.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhihuCrawler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="20" selection-start="2811" selection-end="2811" vertical-scroll-proportion="-2.8965516" vertical-offset="1834" max-vertical-offset="3146">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zhihuCrawlerMultiThread.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhihuCrawlerMultiThread.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="17" selection-start="5224" selection-end="5224" vertical-scroll-proportion="-2.137931" vertical-offset="3352" max-vertical-offset="4092">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web_login.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_login.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="231" column="19" selection-start="9077" selection-end="9085" vertical-scroll-proportion="-3.189655" vertical-offset="4655" max-vertical-offset="5148">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrllibDemo.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UrllibDemo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="43" selection-start="273" selection-end="273" vertical-scroll-proportion="-2.413793" vertical-offset="58" max-vertical-offset="1826">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SWJTU_Dean_Crawler.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SWJTU_Dean_Crawler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="39" selection-start="468" selection-end="468" vertical-scroll-proportion="0.15810277" vertical-offset="206" max-vertical-offset="1452">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -103,11 +47,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/KNN/KNN.py" />
         <option value="$PROJECT_DIR$/zhihuCrawlerMultiThread.py" />
         <option value="$PROJECT_DIR$/zhihuCrawler.py" />
         <option value="$PROJECT_DIR$/web_login.py" />
         <option value="$PROJECT_DIR$/SWJTU_Dean_Crawler.py" />
+        <option value="$PROJECT_DIR$/KNN/KNN.py" />
       </list>
     </option>
   </component>
@@ -188,6 +132,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
   </component>
   <component name="RunManager" selected="Python.KNN">
     <configuration default="false" name="KNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -339,6 +288,23 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4ae7cb0d-d804-4a0c-b88b-1354469456c0" name="Default" comment="" />
@@ -351,16 +317,16 @@
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2528978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3215859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -389,12 +355,52 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/KNN/KNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="10" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
+        <state line="19" column="10" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="616">
           <folding>
-            <marker date="1393227606075" expanded="true" signature="28:88" placeholder="import ..." />
-            <marker date="1393227606075" expanded="true" signature="111:232" placeholder="..." />
-            <marker date="1393227606075" expanded="true" signature="246:315" placeholder="..." />
+            <element signature="e#28#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihu.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihuCrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="20" selection-start="2811" selection-end="2811" vertical-scroll-proportion="0.0" vertical-offset="2200" max-vertical-offset="3344">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihuCrawlerMultiThread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="17" selection-start="5224" selection-end="5224" vertical-scroll-proportion="0.0" vertical-offset="3696" max-vertical-offset="4312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="231" column="19" selection-start="9077" selection-end="9085" vertical-scroll-proportion="0.0" vertical-offset="5082" max-vertical-offset="5390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UrllibDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="43" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SWJTU_Dean_Crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="39" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1452">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -407,36 +413,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zhihuCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="20" selection-start="2811" selection-end="2811" vertical-scroll-proportion="-2.8965516" vertical-offset="1834" max-vertical-offset="3146">
+        <state line="100" column="20" selection-start="2811" selection-end="2811" vertical-scroll-proportion="0.0" vertical-offset="2200" max-vertical-offset="3344">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhihuCrawlerMultiThread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="17" selection-start="5224" selection-end="5224" vertical-scroll-proportion="-2.137931" vertical-offset="3352" max-vertical-offset="4092">
+        <state line="168" column="17" selection-start="5224" selection-end="5224" vertical-scroll-proportion="0.28037384" vertical-offset="3456" max-vertical-offset="4312">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="19" selection-start="9077" selection-end="9085" vertical-scroll-proportion="-3.189655" vertical-offset="4655" max-vertical-offset="5148">
+        <state line="231" column="19" selection-start="9077" selection-end="9085" vertical-scroll-proportion="0.6346382" vertical-offset="4547" max-vertical-offset="5390">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UrllibDemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="43" selection-start="273" selection-end="273" vertical-scroll-proportion="-2.413793" vertical-offset="58" max-vertical-offset="1826">
+        <state line="9" column="43" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1870">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SWJTU_Dean_Crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="468" selection-end="468" vertical-scroll-proportion="0.15810277" vertical-offset="206" max-vertical-offset="1452">
+        <state line="16" column="39" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1452">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KNN/KNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="34" selection-start="321" selection-end="321" vertical-scroll-proportion="0.44974446" vertical-offset="0" max-vertical-offset="968">
+          <folding>
+            <element signature="e#28#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
