@@ -18,7 +18,7 @@ def main():
     opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cookie))
     # build post data
     postdata = urllib.parse.urlencode({
-        'password':'7165092054',
+        'password':'********',
         'url':'../usersys/simple.jsp',
         'user_id':'20103375',
         'user_style':'old',

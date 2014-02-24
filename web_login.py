@@ -229,7 +229,7 @@ class my_login:
 if __name__ == "__main__":
 
     username = '568585595@qq.com'
-    pwd = '7165092054'
+    pwd = '********'
     cookie_file  = 'cookie.dat'
     login = my_login(username,pwd,cookie_file)
     login_status = login.weibo_login()

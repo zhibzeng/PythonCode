@@ -147,7 +147,7 @@ class DatamineThread(threading.Thread):
 def main(thread):
     ThreadNum = thread
     email='zengzhibin054@gmail.com'
-    psw = '7165092054'
+    psw = '********'
     config_init()  #initial configuratin
     main_page = login(email,psw) #login zhihu.com
     main_soup = BeautifulSoup(main_page)
